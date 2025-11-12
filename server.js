@@ -42,3 +42,5 @@ app.post("/proxy", async (req, res) => {
 });
 
 app.listen(8080, () => console.log("Relay running on 8080"));
+app.get("/healthz", (_, res) => res.send("ok"));
+
